@@ -1,0 +1,109 @@
+// BASES
+@mixin respond($breakpoint) {
+  // $breakpoint is simply a variable that can have several values
+
+  @if $breakpoint==tablet {
+    // here `tablet` is the value of $breakpoint
+    // when call tablet, we mean the following piece of code
+
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==bigSreen {
+    @media only screen and (min-width: 1350px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==minWidth {
+    @media only screen and (max-width: 480px) {
+      @content;
+    }
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  height: 100vh;
+}
+
+///
+
+/// STYLES ////
+
+main {
+  padding: 50px;
+  position: relative;
+  @include respond(minWidth) {
+    padding: 40px;
+    text-align: center;
+  }
+}
+
+button {
+  padding: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  color: #000;
+  background-color: #b5da15;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 2px solid #000;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  &:hover() {
+    background-color: #dfff2a;
+    border: 2px solid #d9f827;
+  }
+  @include respond(minWidth) {
+    position: absolute;
+    bottom: 45px;
+    left: 20%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+}
+
+.off:hover {
+  background-color: #696b5e;
+  border: 2px solid #696b5e;
+}
+.off {
+  @include respond(minWidth) {
+    left: 55%;
+  }
+}
+
+h1 {
+  @include respond(minWidth) {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  @include respond(minWidth) {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+img {
+  @include respond(minWidth) {
+    width: 50%;
+  }
+}

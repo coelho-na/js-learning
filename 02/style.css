@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  height: 100vh;
+}
+
+main {
+  padding: 50px;
+  position: relative;
+}
+
+@media only screen and (max-width: 480px) {
+  main {
+    padding: 40px;
+    text-align: center;
+  }
+}
+
+button {
+  padding: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 700;
+  color: #000;
+  background-color: #b5da15;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 2px solid #000;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+button:hover() {
+  background-color: #dfff2a;
+  border: 2px solid #d9f827;
+}
+
+@media only screen and (max-width: 480px) {
+  button {
+    position: absolute;
+    bottom: 45px;
+    left: 20%;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.off:hover {
+  background-color: #696b5e;
+  border: 2px solid #696b5e;
+}
+
+@media only screen and (max-width: 480px) {
+  .off {
+    left: 55%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  img {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
