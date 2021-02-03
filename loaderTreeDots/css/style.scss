@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #da22ff, #9733ee);
+}
+
+.square-ball {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(332, 77%, 50%);
+  border: 5px solid hsl(335, 84%, 46%);
+  transform: rotate(45deg);
+  margin: 0 15px;
+}
