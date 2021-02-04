@@ -18,4 +18,4 @@ TweenMax.to(elem, 1, {
 // from - Anima o elemento da prop (tween) até as prop atuais (css)
 // to - Anima o elemento da prop atual (css) até as props passadas na prop (tween)
 // fromTo - Anima o elemento das props passadas como from até as props passadas como to
-// propriedade 'yoyo:true' diz a animação que ao terminar ela volte fazendo a mesma coisa
+///////// propriedade 'yoyo:true' diz a animação que ao terminar ela volte fazendo a mesma coisa
