@@ -1,0 +1,97 @@
+/* color variables */
+/*Border radius*/
+/*Animation*/
+/*Reseting Styles*/
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/***********************************************/
+body {
+  background: #f9fbff;
+  margin: 0 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.nav {
+  background-color: white;
+  -webkit-box-shadow: 0 0 10px 5px #e1e5ee;
+          box-shadow: 0 0 10px 5px #e1e5ee;
+  border-radius: 0 0 2rem 2rem;
+  overflow: hidden;
+  padding: 1rem;
+  width: 24rem;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.nav__listitem {
+  list-style: none;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.nav__listitem::before {
+  content: "";
+  width: 4rem;
+  height: 4rem;
+  background-color: #f3e5f5;
+  display: block;
+  border-radius: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
+  transition: -webkit-transform 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
+  transition: transform 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
+  transition: transform 400ms cubic-bexier(0, 0.76, 0.58, 1.43), -webkit-transform 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: 1;
+}
+
+.nav__listitem svg {
+  fill: #767b91;
+  width: 2rem;
+  -webkit-transition: fill 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
+  transition: fill 400ms cubic-bexier(0, 0.76, 0.58, 1.43);
+  z-index: 99;
+  position: relative;
+}
+
+.nav__listitem:hover svg {
+  fill: #aa00ff;
+}
+
+.nav__listitem-active svg {
+  fill: #aa00ff;
+}
+
+.nav__listitem-active::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=style.css.map */
