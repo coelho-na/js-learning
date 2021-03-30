@@ -1,0 +1,25 @@
+.form__button {
+  background-color: $bgViolet;
+  color: $clr-white;
+  display: inline-block;
+  width: 40%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 0.4rem;
+  border: 1px solid $clr-white;
+  transition: background-color 400ms ease-in;
+  &:hover {
+    background-color: $clr-violetLight;
+  }
+}
+
+@media (min-width: 768px) {
+  .form__button {
+    width: 80%;
+  }
+}

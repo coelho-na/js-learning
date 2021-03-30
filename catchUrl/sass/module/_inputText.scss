@@ -1,0 +1,20 @@
+input[type="text"] {
+  font-family: inherit;
+  margin-left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border: 2px solid $clr-gray400;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  input[type="text"] {
+    margin-left: 0;
+    width: 100%;
+    transform: translateX(0);
+  }
+}
