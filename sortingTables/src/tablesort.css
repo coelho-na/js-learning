@@ -4,6 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
   max-width: 800px;
   margin: 50px auto;
+  padding: 0 50px;
 }
 
 table {
@@ -19,4 +20,13 @@ td {
 .table__head {
   font-weight: bold;
   text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:hover {
+  background-color: black;
+  color: white;
 }
