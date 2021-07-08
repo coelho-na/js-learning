@@ -37,6 +37,16 @@ body {
   position: relative;
 }
 
+.search.active .search__autocomplete-box {
+  padding: 0.625rem 0.5rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.search.active .search__list {
+  display: block;
+}
+
 .search__input {
   height: 3.4375rem;
   width: 100%;
@@ -49,7 +59,7 @@ body {
 }
 
 .search__autocomplete-box {
-  /* padding: 0.625rem 0.5rem; */
+  padding: 0;
   max-height: 280px;
   overflow-y: auto;
   opacity: 0;
