@@ -1,3 +1,3 @@
-## 🚀 30diasDeCSS 🚀
+## 🚀 Projetos para melhorar skills 🚀
  
- 30 dias de CSS3, é um desafio que visa ajudá-lo a melhorar suas habilidades de codificação fazendo mini projetos diarios utilizando HTML5, CSS3 e JS.
+ Esses mini projetos tem o objetivo de melhorar minhas habilidades de codificação utilizando HTML5, CSS3 e JS.
